@@ -75,8 +75,52 @@ input:focus, input:active, input:active:focus, .form-control {
   box-shadow: none !important;
 }
 
+.btn {
+  transition: 0.2s !important;
+}
+.btn:focus,.btn:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.btn:hover {
+  box-shadow: 2px 2px 5px gray;
+  letter-spacing: 1.1px;
+}
+
+.modal-body {
+  background-color: #212529;
+  margin: auto;
+}
+
+
 @media only screen and (max-width: 600px) {
   .card-row {
     flex-direction: column;
   }
+  .responsive-iframe {
+    width: 320px;
+    height: 240px;
+  }
+
+  .modal-body {
+    margin: 0;
+  }
+
+  .responsive-iframe {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .animal-card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* .modal-viewport {
+    background-color: #212529 !important;
+    border: none !important;
+  } */
+  
 }

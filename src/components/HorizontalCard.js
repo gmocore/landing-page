@@ -9,7 +9,7 @@ const HorizontalCard = ({ img }) => {
     const handleShow = () => setShow(true);
     return (
         <Card className="mb-2">
-            <Row noGutters className="bg-dark rounded shadow">
+            <Row noGutters className="bg-dark rounded shadow animal-card">
                 <Col>
                     <Card.Img src={img} alt="Build Animals" />
                 </Col>
@@ -31,27 +31,31 @@ const HorizontalCard = ({ img }) => {
                             <Button className="btn-light" onClick={handleShow}>
                                 Watch the Trailer Now!
                         </Button>
-                            <Modal show={show} onHide={handleClose} variant="dark">
-                                <Modal.Header closeButton>
-                                    <Modal.Title>Modal heading</Modal.Title>
-                                </Modal.Header>
-                                <Modal.Body>
-                                    Embedded video goes here
-                                    <iframe 
-                                    src="https://player.vimeo.com/video/413931338" 
-                                    width="100%" 
-                                    height="auto" 
+                            <Modal show={show} onHide={handleClose} dialogClassName="modal-90w" className="video-container modal-viewport">
+                                {/* <Modal.Header closeButton>
+                                </Modal.Header> */}
+                                <Modal.Body >
+                                    {/* <iframe 
+                                    src="https://player.vimeo.com/video/413931338?autoplay=1" 
+                                    width="640px" 
+                                    height="360px" 
                                     frameborder="0" 
                                     allow="autoplay; fullscreen; picture-in-picture" 
                                     allowfullscreen 
-                                    />
+                                    /> */}
+                                      
+                                    <iframe src="https://player.vimeo.com/video/57875730?autoplay=1" 
+                                            frameborder="0" 
+                                            allow="autoplay; fullscreen; picture-in-picture" 
+                                            allowfullscreen
+                                            width="640px" 
+                                            height="360px" 
+                                            className="responsive-iframe">
+                                    </iframe>
+                               
                                         </Modal.Body>
                                 
-                                <Modal.Footer>
-                                    <Button variant="secondary" onClick={handleClose}>
-                                        Close
-                                    </Button>
-                                </Modal.Footer>
+                           
                             </Modal>
 
                         </div>
