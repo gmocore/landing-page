@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Form, Button, Alert } from 'react-bootstrap'
+import ContactForm from '../components/ContactForm';
 
 const Contact = () => {
 
@@ -11,7 +12,7 @@ const Contact = () => {
         <div className="container">
             <h1 className="text-center mt-2">Contact</h1>
             <div className="container border border-secondary rounded mt-4 shadow">
-                <Form>
+                {/* <Form>
                     <Form.Group controlId="exampleForm.ControlInput1">
                         <Form.Label>Email address</Form.Label>
                         <Form.Control type="email" placeholder="name@example.com" />
@@ -27,7 +28,8 @@ const Contact = () => {
                      <Alert show={show} variant="danger" dismissible onClose={()=> setShow(false)}>
                             this doesnt do anything yet
                      </Alert>
-                </Form>
+                </Form> */}
+                <ContactForm></ContactForm>
                 
             </div>
         </div>

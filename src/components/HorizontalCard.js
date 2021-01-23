@@ -80,7 +80,8 @@ const HorizontalCard = ({ img }) => {
                                         <Modal.Title>Modal heading</Modal.Title>
                                     </Modal.Header>
                                     <Modal.Body>
-                                        <Contact></Contact>
+                                        {/* <Contact></Contact> */}
+                                        somsldkhglsdhglkshglkhlkdgshglsdglh
                                     </Modal.Body>
                                     <Modal.Footer>
                                         <Button variant="secondary" >
