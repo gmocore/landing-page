@@ -1,24 +1,24 @@
-import React from 'react';
-import { Modal } from 'react-bootstrap'
+import React, { useState } from 'react';
+import { Modal, Button } from 'react-bootstrap'
 
-const Modal = () => {
+const ContactModal = (props) => {
 
-    const [show, setShow] = useState(false);
+    // const [show, setShow] = useState(false);
 
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
+    // const handleClose = () => setShow(false);
+    // const handleShow = () => setShow(true);
 
     return ( 
-        <Modal show={show} onHide={handleClose}>
+        <Modal show={props.show} onHide={props.handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>Modal heading</Modal.Title>
         </Modal.Header>
         <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
+          <Button variant="secondary" onClick={props.handleClose}>
             Close
           </Button>
-          <Button variant="primary" onClick={handleClose}>
+          <Button variant="primary" onClick={props.handleClose}>
             Save Changes
           </Button>
         </Modal.Footer>
@@ -26,4 +26,4 @@ const Modal = () => {
      );
 }
  
-export default Modal;
+export default ContactModal;

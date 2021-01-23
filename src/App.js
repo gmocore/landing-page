@@ -10,6 +10,7 @@ import Home from "./pages/Home"
 import About from "./pages/About"
 import Contact from './pages/Contact'
 import './App.css';
+import HorizontalCard from './components/HorizontalCard';
 
 function App() {
   return (
@@ -32,8 +33,11 @@ function App() {
         <Route path="/about" component={About}>
         </Route>
         <Route path="/contact" component={Contact}>
+       
           {/* <Contact /> */}
+        
         </Route>
+        <Route path="/build-animals" component={HorizontalCard} />
       </Switch>
     </div>
   </Router>

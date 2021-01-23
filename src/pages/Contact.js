@@ -20,7 +20,8 @@ const Contact = () => {
                         <Form.Label>Send us a message!</Form.Label>
                         <Form.Control as="textarea" rows={3} />
                     </Form.Group>
-                    <Button variant="primary" size="lg" className="mb-4" onClick={onSubmit}>
+                    <Button variant="secondary" size="lg" className="mb-4" onClick={onSubmit}>
+                    <i class="far fa-envelope mr-2"></i>
                         Submit
                      </Button>
                      <Alert show={show} variant="danger" dismissible onClose={()=> setShow(false)}>
