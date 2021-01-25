@@ -6,30 +6,33 @@ import logo from '../img/ab_Partum Novum-01.jpg'
 const NavBar = () => {
     return (
         <Navbar bg="light" variant="light" className="container-fluid shadow" id="nav-container">
-            
-                <Navbar.Brand className="text-center" width="100%">
+
+            <Navbar.Brand className="text-center" width="100%">
+                <Link to="/">
                     <img
                         src={logo}
                         width="300"
                         // height="110"
                         className="d-inline-block align-top nav-logo border border-secondary" />
 
-                </Navbar.Brand>
+                </Link>
 
-                <Nav className="">
-                    <Nav.Link>
-                        <Link to="/">Home</Link>
-                    </Nav.Link>
-                    <Nav.Link>
+            </Navbar.Brand>
+
+            <Nav className="">
+                <Nav.Link>
+                    <Link to="/">Home</Link>
+                </Nav.Link>
+                {/* <Nav.Link>
                         <Link to="/about">About</Link>
-                    </Nav.Link>
-                    <Nav.Link>
-                        <Link to="/contact">Contact</Link>
-                    </Nav.Link>
+                    </Nav.Link> */}
+                <Nav.Link>
+                    <Link to="/contact">Contact</Link>
+                </Nav.Link>
 
 
-                </Nav>
-          
+            </Nav>
+
 
         </Navbar>
     );

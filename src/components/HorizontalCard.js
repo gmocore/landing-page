@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Card, Col, Row, Button, Modal } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 import ContactModal from './Modal'
 import animalImgVertical from "../img/BuildAnimals Poster.jpg"
 import Contact from '../pages/Contact';
@@ -37,60 +38,24 @@ const HorizontalCard = ({ img }) => {
                                 A fun, learning series for children that will nurture their creativity, imagination, confidence and excitement that can only be built by the BuildAnimals!
                         </Card.Text>
                             <div className="container-fluid d-flex justify-content-center">
-                                <Button className="btn-light" onClick={handleShow}>
+                             
+                                {/* <Button className="btn-light" onClick={handleShow}>
                                     <i class="fas fa-video mr-2"></i>
                                     Watch the Trailer Now!
-                        </Button>
-                                <Modal show={show} onHide={handleClose} className="video-container modal-viewport">
-                                    {/* <Modal.Header closeButton>
-                                </Modal.Header> */}
-                                    <Modal.Body >
-                                        {/* <iframe 
-                                    src="https://player.vimeo.com/video/413931338?autoplay=1" 
-                                    width="640px" 
-                                    height="360px" 
-                                    frameborder="0" 
-                                    allow="autoplay; fullscreen; picture-in-picture" 
-                                    allowfullscreen 
-                                    /> */}
-
-                                        <iframe src="https://player.vimeo.com/video/57875730?autoplay=1"
-                                            frameborder="0"
-                                            allow="autoplay; fullscreen; picture-in-picture"
-                                            allowfullscreen
-                                            width="640px"
-                                            height="360px"
-                                            className="responsive-iframe">
-                                        </iframe>
-
-                                    </Modal.Body>
-
-
-                                </Modal>
-
-
-
-                            </div>
-                            <div className="container d-flex justify-content-center">
-                                <Button className="btn-light" onClick={handleShowContact}>
-                                    Contact
+                                </Button> */}
+                                <Button className="btn-light" onClick={handleShow}>
+                                    <i class="far fa-envelope mr-2">
+                                        <Link to="/contact" className="ml-2 contact-link">
+                                         Contact Us!
+                                        </Link>
+                                    </i>
+                                    
                                 </Button>
-                                <Modal show={showContact} onHide={handleCloseContact}>
-                                    <Modal.Header closeButton>
-                                        <Modal.Title>Modal heading</Modal.Title>
-                                    </Modal.Header>
-                                    <Modal.Body>
-                                        {/* <Contact></Contact> */}
-                                        somsldkhglsdhglkshglkhlkdgshglsdglh
-                                    </Modal.Body>
-                                    <Modal.Footer>
-                                        <Button variant="secondary" >
-                                            Close
-                                        </Button>
-                                      
-                                    </Modal.Footer>
-                                </Modal>
+
+
+
                             </div>
+                       
                         </Card.Body>
                     </Col>
                 </Row>

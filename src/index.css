@@ -88,6 +88,15 @@ input:focus, input:active, input:active:focus, .form-control {
   letter-spacing: 1.1px;
 }
 
+.contact-link {
+  color: black;
+}
+
+.contact-link:hover {
+  text-decoration: none;
+  color: rgb(51, 52, 53);
+}
+
 .modal-body {
   background-color: #212529;
   margin: auto;
