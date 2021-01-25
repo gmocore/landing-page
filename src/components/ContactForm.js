@@ -108,9 +108,9 @@ class ContactForm extends Component {
     const { formErrors } = this.state;
 
     return (
-      <div className='ContactForm'>
+      <div className='ContactForm p-4'>
         <form id='contact-form' onSubmit={this.handleSubmit} noValidate>
-          <div className='row'>
+          <div className='row mb-2'>
             <div className='col-6'>
               <input
                 type='text'
@@ -143,7 +143,7 @@ class ContactForm extends Component {
           </div>
 
           <div className='row'>
-            <div className='col-6'>
+            <div className='col mb-2'>
               <input
                 type='subject'
                 name='subject'
@@ -160,7 +160,10 @@ class ContactForm extends Component {
               )}
             </div>
 
-            <div className='col-6'>
+         
+          </div>
+          <div className="row">
+          <div className='col mb-2'>
               <textarea
                 rows='5'
                 name='message'
@@ -177,7 +180,7 @@ class ContactForm extends Component {
               )}
             </div>
           </div>
-          <button className='submit-btn' type='submit'>
+          <button className='submit-btn btn btn-secondary' type='submit'>
             Submit
           </button>
         </form>

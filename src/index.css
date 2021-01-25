@@ -118,6 +118,13 @@ input:focus, input:active, input:active:focus, .form-control {
     flex-direction: column;
   }
 
+  #contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+
 
 
   /* .modal-viewport {
