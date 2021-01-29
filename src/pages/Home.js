@@ -1,6 +1,6 @@
 import React from 'react';
 import ImageBanner from '../components/ImageBanner'
-import animalImg from "../img/BuildAnimals Poster - Horizontal (Medium).jpg"
+import animalImg from "../img/BuildAnimals-Wide.jpg"
 import ProjectCard from '../components/ProjectCard';
 
 

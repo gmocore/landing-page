@@ -4,7 +4,6 @@ body, html {
 
 body {
   margin: 0;
-  background-color: gray;
   font-family: -apple-system, BlinkMacSystemFont, 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -21,10 +20,10 @@ code {
   background-color: darkslategray;
 } */
 
-#nav-container {
+/* #nav-container {
   display: flex;
   flex-direction: column;
-}
+} */
 
 
 .project-card {

@@ -1,37 +1,33 @@
 import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
-import logo from '../img/ab_Partum Novum-01.jpg'
+import logo from '../img/Partum_Novum_Logo_vector.svg'
 
 const NavBar = () => {
     return (
-        <Navbar bg="light" variant="light" className="container-fluid shadow" id="nav-container">
+        <Navbar bg="white" variant="white" className="container-fluid sticky-top" id="nav-container">
+            <div className="nav-wrapper container">
 
-            <Navbar.Brand className="text-center" width="100%">
-                <Link to="/">
-                    <img
-                        src={logo}
-                        width="300"
-                        // height="110"
-                        className="d-inline-block align-top nav-logo border border-secondary" />
-
-                </Link>
-
-            </Navbar.Brand>
-
-            <Nav className="">
-                <Nav.Link>
-                    <Link to="/">Home</Link>
-                </Nav.Link>
-                {/* <Nav.Link>
+                <Navbar.Brand className="ml-4" width="100%">
+                    <Link to="/">
+                        <img
+                            src={logo}
+                            width="100"
+                            className="nav-logo" />
+                    </Link>
+                </Navbar.Brand>
+                <div className="link-container ml-auto mr-3 d-flex">
+                    <Nav.Link>
+                        <Link to="/" className="me-2 nav-link text-secondary letter-spacing">Home</Link>
+                    </Nav.Link>
+                    {/* <Nav.Link>
                         <Link to="/about">About</Link>
                     </Nav.Link> */}
-                <Nav.Link>
-                    <Link to="/contact">Contact</Link>
-                </Nav.Link>
-
-
-            </Nav>
+                    <Nav.Link>
+                        <Link to="/contact" className="nav-link text-secondary letter-spacing">Contact</Link>
+                    </Nav.Link>
+                </div>
+            </div>
 
 
         </Navbar>
