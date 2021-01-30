@@ -26,8 +26,8 @@ code {
 } */
 
 .nav-link {
-  -webkit-transition: all 1s cubic-bezier(0, 0, .58, 1);
-  transition: all 1s cubic-bezier(0, 0, .58, 1);
+  -webkit-transition: all 0.8s cubic-bezier(0, 0, .58, 1);
+  transition: all 0.8s cubic-bezier(0.6, 0, .25, 1);
   color: #494f54;
   text-decoration: none;
   border-bottom: 2px solid white;
@@ -39,6 +39,7 @@ code {
   background-color: #000;
   color: #fff !important;
  }
+ 
 .project-card {
   width: 350px;
 }

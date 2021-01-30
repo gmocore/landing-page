@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 
 const ImageBanner = (props) => {
     return (
-        <Card className="bg-dark text-dark text-shadow mt-5 shadow p-1 mb-5 bg-white rounded">
+        <Card className="text-dark text-shadow mt-5 mb-5">
             <Card.Img src={props.img} alt="Card image" />
             <Card.ImgOverlay className="d-flex justify-content-end">
                 <div className="container text-container d-flex justify-content-center flex-column align-items-end">
