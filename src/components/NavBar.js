@@ -8,7 +8,7 @@ const NavBar = () => {
         <Navbar bg="white" variant="white" className="container-fluid sticky-top" id="nav-container">
             <div className="nav-wrapper container">
 
-                <Navbar.Brand className="ml-4 nav-link" width="100%">
+                <Navbar.Brand className="ml-4 nav-logo" width="100%">
                     <Link to="/">
                         <img
                             src={logo}
@@ -16,7 +16,7 @@ const NavBar = () => {
                             className="nav-logo" />
                     </Link>
                 </Navbar.Brand>
-                <div className="link-container ml-auto mr-3 d-flex">
+                <div className="link-container ml-auto-md mr-3-md d-flex">
                         <Link to="/" className="me-2 nav-link letter-spacing">Home</Link>
                     {/* <Nav.Link>
                         <Link to="/about">About</Link>

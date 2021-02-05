@@ -28,15 +28,11 @@ function App() {
         of them to render at a time
       */}
       <Switch>
-        <Route exact path="/" component={Home}>
-        </Route>
+        <Route exact path="/" component={Home} />
         {/* <Route path="/about" component={About}></Route> */}
-        <Route path="/contact" component={Contact}>
-       
-          {/* <Contact /> */}
-        
-        </Route>
+        <Route path="/contact" component={Contact} />
         <Route path="/build-animals" component={HorizontalCard} />
+        <Route component={HorizontalCard} />
       </Switch>
     </div>
   </Router>
